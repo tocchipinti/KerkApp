@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: gateway-service # Name of the application
+  cloud:
+    config:
+      uri: http://localhost:8888 # URL of the application
+      fail-fast: true # Zuul will not start if it can't reach the config-service
+      password: kerkapp123 # Password of the config-service
+      username: user

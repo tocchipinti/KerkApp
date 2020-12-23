@@ -6,4 +6,4 @@ This repository contains different microservices that form the complete system f
 
 
 # Startup
-To start the complete stack run startup.sh
+To start the complete stack run `./mvnw spring-boot:run`

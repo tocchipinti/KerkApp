@@ -1,0 +1,38 @@
+spring:
+  application:
+    name: kerkapp-media
+
+  data:
+    mongodb:
+      database: kerkapp_media
+
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 2KB
+      max-file-size: 5MB # allow only images for now
+      max-request-size: 20MB
+
+server:
+  port: 8000
+
+minio:
+  uri: http://localhost:9000
+  access-key: minio
+  security-key: minio123
+
+security:
+  basic:
+    enable: false
+
+  jwt:
+    uri: /auth/**
+    header: Authorization
+    prefix: Bearer
+    expiration: 86400
+    secret: JwtSecretKey
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka

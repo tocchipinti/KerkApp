@@ -1,4 +1,4 @@
-package com.kerkapp.authservice.controllers;
+package com.kerkapp.authservice.api;
 
 import com.kerkapp.authservice.domain.ChurchUserDetails;
 import com.kerkapp.authservice.domain.Profile;
